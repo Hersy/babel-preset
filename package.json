@@ -1,0 +1,66 @@
+{
+  "name": "@hersy/babel-preset",
+  "version": "0.1.0",
+  "description": "A babel preset to transform JavaScript to comply with my style guide.",
+  "keywords": [
+    "babel",
+    "babel-preset",
+    "hersy",
+    "javascript"
+  ],
+  "homepage": "https://github.com/hersy/babel-preset",
+  "bugs": {
+    "url": "https://github.com/hersy/babel-preset/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hersy/babel-preset"
+  },
+  "license": "MIT",
+  "author": "Santiago 'Hersy' Heilborn <contact@hersy.dev>",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "yarn run lint",
+    "tests-only": "node .",
+    "test": "yarn run tests-only"
+  },
+  "dependencies": {
+    "@babel/helper-plugin-utils": "^7.26.0",
+    "@babel/plugin-transform-classes": "^7.25.0",
+    "@babel/plugin-transform-exponentiation-operator": "^7.26.0",
+    "@babel/plugin-transform-member-expression-literals": "^7.25.0",
+    "@babel/plugin-transform-nullish-coalescing-operator": "^7.26.0",
+    "@babel/plugin-transform-numeric-separator": "^7.25.0",
+    "@babel/plugin-transform-object-rest-spread": "^7.25.0",
+    "@babel/plugin-transform-optional-catch-binding": "^7.25.0",
+    "@babel/plugin-transform-optional-chaining": "^7.25.0",
+    "@babel/plugin-transform-property-literals": "^7.25.0",
+    "@babel/plugin-transform-property-mutators": "^7.25.0",
+    "@babel/plugin-transform-runtime": "^7.26.0",
+    "@babel/plugin-transform-template-literals": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.26.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "babel-preset-current-node-syntax": "^1.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/eslint-parser": "^7.27.0",
+    "@babel/runtime": "^7.27.0",
+    "@eslint/js": "^9.24.0",
+    "eslint": "^9.24.0",
+    "globals": "^16.0.0"
+  },
+  "peerDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/runtime": "^7.27.0"
+  },
+  "packageManager": "yarn@1.22.22"
+}
