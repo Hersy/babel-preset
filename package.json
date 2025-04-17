@@ -1,12 +1,13 @@
 {
   "name": "@hersy/babel-preset",
-  "version": "0.1.0",
-  "description": "A babel preset to transform JavaScript to comply with my style guide.",
+  "version": "0.1.1",
+  "description": "A babel preset to transform JS and TS code to comply with my style guide.",
   "keywords": [
     "babel",
     "babel-preset",
     "hersy",
-    "javascript"
+    "javascript",
+    "typescript"
   ],
   "homepage": "https://github.com/hersy/babel-preset",
   "bugs": {
@@ -47,6 +48,7 @@
     "@babel/plugin-transform-template-literals": "^7.26.0",
     "@babel/preset-env": "^7.26.0",
     "@babel/preset-react": "^7.26.0",
+    "@babel/preset-typescript": "^7.27.0",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "babel-preset-current-node-syntax": "^1.1.0"
   },

@@ -4,6 +4,7 @@ const { declare } = require('@babel/helper-plugin-utils');
 
 module.exports = declare((api, options) => {
   api.assertVersion('^7.26.0');
+  api.cache(true);
 
   const { debug = false, runtimeVersion } = options;
 
@@ -28,6 +29,7 @@ module.exports = declare((api, options) => {
           development: debug,
         },
       ],
+      require('@babel/preset-typescript'),
       require('babel-preset-current-node-syntax'),
     ],
     plugins: [
