@@ -1,6 +1,6 @@
 {
   "name": "@hersy/babel-preset",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "A babel preset to transform JS and TS code to comply with my style guide.",
   "keywords": [
     "babel",
@@ -27,7 +27,10 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "scripts": {
-    "lint": "eslint .",
+    "lint": "eslint . --report-unused-disable-directives --ext .js,json,md",
+    "lint-fix": "eslint . --fix --ext .js,json,md",
+    "format": "yarn run --silent lint-fix",
+    "eslint-check": "eslint --print-config eslint.config.mjs",
     "pretest": "yarn run lint",
     "tests-only": "node .",
     "test": "yarn run tests-only"
@@ -54,11 +57,9 @@
   },
   "devDependencies": {
     "@babel/core": "^7.26.0",
-    "@babel/eslint-parser": "^7.27.0",
     "@babel/runtime": "^7.27.0",
-    "@eslint/js": "^9.24.0",
-    "eslint": "^9.24.0",
-    "globals": "^16.0.0"
+    "@hersy/eslint-config-node": "0.2.1",
+    "eslint": "^9.24.0"
   },
   "peerDependencies": {
     "@babel/core": "^7.26.0",

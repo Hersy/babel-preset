@@ -1,4 +1,4 @@
-# @hersy/babel-preset v0.1.1
+# @hersy/babel-preset v0.2.0
 
 A babel preset to transform JavaScript to comply with my style guide.
 
